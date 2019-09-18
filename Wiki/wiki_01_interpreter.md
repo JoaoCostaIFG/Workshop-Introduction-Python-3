@@ -1,0 +1,2 @@
+# Interpreter
+Python is an interpreted language (unlike C and C++ which are compiled). Another term would be a *scripting language*. While this does bring longer execution times than other languages (being 10 to 100 times slower than C), it allows for a faster development and has a wide array of modules from machine learning to statistics and asynchronous code (such as chat bots).
