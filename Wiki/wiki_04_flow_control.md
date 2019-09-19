@@ -1,10 +1,13 @@
 # Flow Control
 
+
 ## 1. Intro
 
-- Up until now, all the code we've written was executed in top-down order.
-- Sometimes it's necessary to change the way a program flow, for example, making a program that can decide weather or not to run a piece of code.
-- In Python, we have 3 flow control structures: if, for and while.
+Up until now, all the code we've written was executed in top-down order. Sometimes it's necessary to change the way a program flow, for example, making a program that can decide weather or not to run a piece of code.
+In Python, we have 3 flow control structures:
+1. [If statement] (#If)
+1. [For loop] (#For)
+1. [While loop] (#While)
 
 
 ## 2. If
@@ -110,9 +113,8 @@ else:
 
 
 ## 3. For
-- The for loop is one of the two loops available in Python.
-- We use this loop when we want to repeat a code block a known, finite, number of times
-- The for loop makes heavy use of the range object.
+The for loop is one of the two loops available in Python. We use this loop when we want to repeat a code block a known, finite, number of times.
+The for loop makes heavy use of the range object.
 
 - A range is defined as follows: range(start, [end, [step]]).
 - The interval is closed on the left side and open on the right side [start, end).
