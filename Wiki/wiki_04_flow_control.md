@@ -1,22 +1,21 @@
 # Flow Control
-
-
+  
+  
 ## Intro
-
-Up until now, all the code we've written was executed in top-down order. Sometimes it's necessary to change the way a program flow, for example, making a program that can decide weather or not to run a piece of code.
+  
+Up until now, all the code we've written was executed in top-down order. Sometimes it's necessary to change the way a program flow, for example, making a program that can decide weather or not to run a piece of code.  
 In Python, we have 3 flow control structures:
 1. [If statement](#if)
 1. [For loop](#for)
 1. [While loop](#while)
-
-
+  
+  
 ## If
-
+  
 - If statements are Python's decision making structure.
 - The decisions are made by checking the truth value of a condition.
 - The blocks of code that are inside an If structure are only run if the condition is True.
-
-
+  
 ```
 - If Cheat Table
 
@@ -46,9 +45,9 @@ In Python, we have 3 flow control structures:
 | False    | logical false            |
 |----------+--------------------------|
 ```
-
+  
 Usually If structures are followed by an optional Else clause. The code inside the Else clause is only ran if the condition in its corresponding If structure was False.
-
+  
 ```python
 #!/bin/python
 day = int(input("Weekday? (1-7)"))
@@ -58,10 +57,10 @@ if day == 1 or day == 7: # You can test multiple condition at the same time
 else:
 	print("Work day")
 ```
-
+  
 - If structures can be nested indefinitely (If structures inside If structures).
 - We can also make use of Elif structures. These follow either another If or Elif structure and are just like an Else clause but with their own condition to test added.
-
+  
 ```python
 #!/bin/python
 day = int(input("Weekday? (1-7)"))
@@ -87,7 +86,7 @@ elif day == 6:
 else:
 	prinf("Saturday")
 ```
-
+  
 ```python
 #!/bin/python
 number=123
@@ -109,17 +108,18 @@ else:
 		else:
 			print("You didn't manage to guess the number")
 ```
-
-
+  
+  
 ## For
-The for loop is one of the two loops available in Python. We use this loop when we want to repeat a code block a known, finite, number of times.
+  
+The for loop is one of the two loops available in Python. We use this loop when we want to repeat a code block a known, finite, number of times.  
 The for loop makes heavy use of the range object.
 
 - A range is defined as follows: range(start, [end, [step]]).
 - The interval is closed on the left side and open on the right side [start, end).
 - The step parameter is optional and by default is 1.
 - We can also create range objects with only 1 parameter: range(3). These are the same as: range(0, 3).
-
+  
 ```python
 #!/bin/python
 number=123
@@ -139,9 +139,9 @@ for i in range(3):
 if number != guess:
 	print("You didn't manage to guess the number.")
 ```
-
+  
 The for loop can be followed by an Else clause. The block of code inside the Else clause is executed once after the for loop is over, unless we reach a break keyword inside the for loop.
-
+  
 ```python
 #!/bin/python
 number=123
@@ -159,11 +159,12 @@ for i in range(3):
 else:
 	print("You didn't manage to guess the number.")
 ```
-
-
+  
+  
 ## While
+  
 While is the second and last available loop in Python. We use this loop when we want to repeat a code for an unknown amount of times (while a condition is True).
-
+  
 ```python
 #!/bin/python
 number = 123
