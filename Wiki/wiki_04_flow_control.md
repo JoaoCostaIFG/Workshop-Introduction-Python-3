@@ -5,9 +5,9 @@
 
 Up until now, all the code we've written was executed in top-down order. Sometimes it's necessary to change the way a program flow, for example, making a program that can decide weather or not to run a piece of code.
 In Python, we have 3 flow control structures:
-1. [If statement] (#If)
-1. [For loop] (#For)
-1. [While loop] (#While)
+1. [If statement](#if)
+1. [For loop](#for)
+1. [While loop](#while)
 
 
 ## 2. If
