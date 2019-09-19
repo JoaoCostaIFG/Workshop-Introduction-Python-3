@@ -47,8 +47,7 @@ In Python, we have 3 flow control structures:
 |----------+--------------------------|
 ```
 
-- Usually If structures are followed by an optional Else clause.
-- The code inside the Else clause is only ran if the condition in its corresponding If structure was False.
+Usually If structures are followed by an optional Else clause. The code inside the Else clause is only ran if the condition in its corresponding If structure was False.
 
 ```python
 #!/bin/python
@@ -141,7 +140,7 @@ if number != guess:
 	print("You didn't manage to guess the number.")
 ```
 
-- The for loop can be followed by an Else clause. The block of code inside the Else clause is executed once after the for loop is over, unless we reach a break keyword inside the for loop.
+The for loop can be followed by an Else clause. The block of code inside the Else clause is executed once after the for loop is over, unless we reach a break keyword inside the for loop.
 
 ```python
 #!/bin/python
@@ -163,8 +162,7 @@ else:
 
 
 ## While
-- While is the second and last available loop in Python.
-- We use this loop when we want to repeat a code for an unknown amount of times (while a condition is True).
+While is the second and last available loop in Python. We use this loop when we want to repeat a code for an unknown amount of times (while a condition is True).
 
 ```python
 #!/bin/python
