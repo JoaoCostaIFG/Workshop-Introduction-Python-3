@@ -1,13 +1,17 @@
 # Flow Control
--Intro
-	-Ate agora tudo o que fizemos e executado em top-down order.
-	-Por vezes e necessario mudar a forma como o programa flui, por exemplo, fazer com que o programa tome decisoes sobre qual caminho tomar dependo da situacao.
-	-Em python temos 3 statements de controlo do fluxo: if, for e while.
+
+## 1. Intro
+	* Up until now, all the code we've written was executed in top-down order.
+	* Sometimes it's necessary to change the way a program flow, for example, making a program that can decide weather or not to run a piece of code.
+	* In Python, we have 3 flow control structures: if, for and while.
 
 
--If
-	-O If statement e usado para verficar a veracidade de uma condicao.
-	-Os blocos de codigo que colocarmos dentro de um If statement so sao executados se a condicao que fornecermos se verificar.
+## 2. If
+	* If statements are Python's decision making structure.
+	* The decisions are made by checking the truth value of a condition.
+	* The blocks of code that are inside an If structure are only run if the condition is True.
+
+	* If Cheat Table
 
 	| Operator | Meaning                  |
 	|==========+==========================|
@@ -34,23 +38,27 @@
 	| False    | logical false            |
 	|----------+--------------------------|
 
-	-E usual que os if statements sejam seguidos de um Else (e opcional).
-	-Os blocos de codigo que colocarmos dentro de um Else statement so sao executados se a condicao testada no If statement que lhe corresponde nao se verificar.
+	* Usually If structures are followed by an optional Else clause.
+	* The code inside the Else clause is only ran if the condition in its corresponding If structure was False.
 
+	```
 	#!/bin/python
 	day = int(input("Weekday? (1-7)"))
-	if day == 1 or day == 7:
+	if day == 1 or day == 7: # You can test multiple condition at the same time
 		print("Weekend")
 
 	else:
 		print("Work day")
+	```
 
-	-E possivel criar nested If statements, isto e, colocar If statements dentro do bloco de codigo de um If statement.
-	-Tambem e existem Elif statements. Estes parecem em seguimento de um If ou de um Elif statement e funcionam da mesma forma que um If statement.
+	* If structures can be nested indefinitely (If structures inside If structures).
+	* We can also make use of Elif structures. These follow either another If or Elif structure and are just like an Else clause but with their own condition to test added.
 
+	```
 	#!/bin/python
 	day = int(input("Weekday? (1-7)"))
-	if day == 1:
+
+	if (day == 1): # Parentheses are optional
 		print("Sunday")
 
 	elif day == 2:
@@ -70,7 +78,9 @@
 
 	else:
 		prinf("Saturday")
+	```
 
+	```
 	#!/bin/python
 	number=123
 
@@ -90,16 +100,19 @@
 
 			else:
 				print("You didn't manage to guess the number")
+	```
 
+## 3. For
+	* The for loop is one of the two loops available in Python.
+	* We use this loop when we want to repeat a code block a known, finite, number of times
+	* The for loop makes heavy use of the range object.
 
--For
-	-The for loop is one of the two loops available in python.
-	-We use this loop when we want to repeat a code block a known, finite, number of times
-	-The for loop makes heavy use of the range object.
-	-A range is defined as follows: range(start, [end, [step]]).
-	-The end parameter is optional and the interval is closed on the left side and open on the right side [start).
-	-The step parameter is optional and by default is 1.
+	* A range is defined as follows: range(start, [end, [step]]).
+	* The interval is closed on the left side and open on the right side [start, end).
+	* The step parameter is optional and by default is 1.
+	* We can also create range objects with only 1 parameter: range(3). These are the same as: range(0, 3).
 
+	```
 	#!/bin/python
 	number=123
 
@@ -107,27 +120,60 @@
 		guess = int(input("Your guess? "))
 		if number == guess:
 			print("You got it right!!")
+			# We use the break keyword to end a loop early
+			break
+
+		else:
+			print("Better luck next time.")
+			# We use the continue keyword to go straight to the next loop iteration (just wanted to show it in this case)
+			continue
 
 	if number != guess:
-		print("You didn't manage to guess the number")
+		print("You didn't manage to guess the number.")
+	```
 
+	* The for loop can be followed by an Else clause. The block of code inside the Else clause is executed once after the for loop is over, unless we reach a break keyword inside the for loop.
 
-	-The for loop can be followed by an else statement. The block of code inside de else statement is executed once after the for loop is over, unless we reach a break keyword inside the for loop.
-	-We can use the break keyword to exit out of a for loop early.
-
+	```
 	#!/bin/python
-	number = 123
-	flag = True
+	number=123
 
 	for i in range(3):
 		guess = int(input("Your guess? "))
 		if number == guess:
-			flag = False
+			print("You got it right!!")
+			# We use the break keyword to end a loop early
 			break
 
-	else:
-		print("You didn't manage to guess the number")
+		else:
+			print("Better luck next time.")
 
-	if flag:
+	else:
+		print("You didn't manage to guess the number.")
+	```
+
+
+## 4. While
+	* While is the second and last available loop in Python.
+	* We use this loop when we want to repeat a code for an unknown amount of times (while a condition is True).
+
+	```
+	#!/bin/python
+	number = 123
+	choice = "yes"
+	
+	guess = int(input("Your guess? "))
+
+	# Parantheses are optional
+	while (number != guess) and (choice == "yes"): # The tested condition works the same as in the If structure
+		choice = input("You didn't get it right, would you like to try again? (yes/no) ")
+		guess = int(input("Your guess? "))
+
+	if choice == "yes":
 		print("You got it right!!")
+	
+	else:
+		print("Better luck next time.")
+	```
+
 
