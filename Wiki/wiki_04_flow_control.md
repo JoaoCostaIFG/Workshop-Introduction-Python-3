@@ -1,7 +1,7 @@
 # Flow Control
 
 
-## 1. Intro
+## Intro
 
 Up until now, all the code we've written was executed in top-down order. Sometimes it's necessary to change the way a program flow, for example, making a program that can decide weather or not to run a piece of code.
 In Python, we have 3 flow control structures:
@@ -10,7 +10,7 @@ In Python, we have 3 flow control structures:
 1. [While loop](#while)
 
 
-## 2. If
+## If
 
 - If statements are Python's decision making structure.
 - The decisions are made by checking the truth value of a condition.
@@ -112,7 +112,7 @@ else:
 ```
 
 
-## 3. For
+## For
 The for loop is one of the two loops available in Python. We use this loop when we want to repeat a code block a known, finite, number of times.
 The for loop makes heavy use of the range object.
 
@@ -162,7 +162,7 @@ else:
 ```
 
 
-## 4. While
+## While
 - While is the second and last available loop in Python.
 - We use this loop when we want to repeat a code for an unknown amount of times (while a condition is True).
 
