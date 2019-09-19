@@ -13,32 +13,32 @@
 - The decisions are made by checking the truth value of a condition.
 - The blocks of code that are inside an If structure are only run if the condition is True.
 
-* If Cheat Table
 
-| Operator | Meaning                  |
-|==========+==========================|
-| ==       | equality test            |
-|----------+--------------------------|
-| !=       | inequality test          |
-|----------+--------------------------|
-| >        | greater than             |
-|----------+--------------------------|
-| <        | less than                |
-|----------+--------------------------|
-| >=       | greater than or equal to |
-|----------+--------------------------|
-| <=       | less than or equal to    |
-|----------+--------------------------|
-| and      | logical and              |
-|----------+--------------------------|
-| or       | logical or               |
-|----------+--------------------------|
-| not      | logical not              |
-|----------+--------------------------|
-| True     | logical true             |
-|----------+--------------------------|
-| False    | logical false            |
-|----------+--------------------------|
+- If Cheat Table
+- | Operator | Meaning                  |
+- |==========+==========================|
+- | ==       | equality test            |
+- |----------+--------------------------|
+- | !=       | inequality test          |
+- |----------+--------------------------|
+- | >        | greater than             |
+- |----------+--------------------------|
+- | <        | less than                |
+- |----------+--------------------------|
+- | >=       | greater than or equal to |
+- |----------+--------------------------|
+- | <=       | less than or equal to    |
+- |----------+--------------------------|
+- | and      | logical and              |
+- |----------+--------------------------|
+- | or       | logical or               |
+- |----------+--------------------------|
+- | not      | logical not              |
+- |----------+--------------------------|
+- | True     | logical true             |
+- |----------+--------------------------|
+- | False    | logical false            |
+- |----------+--------------------------|
 
 - Usually If structures are followed by an optional Else clause.
 - The code inside the Else clause is only ran if the condition in its corresponding If structure was False.
