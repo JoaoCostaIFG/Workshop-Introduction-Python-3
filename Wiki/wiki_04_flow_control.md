@@ -13,7 +13,7 @@
 - The decisions are made by checking the truth value of a condition.
 - The blocks of code that are inside an If structure are only run if the condition is True.
 
-- If Cheat Table
+* If Cheat Table
 
 | Operator | Meaning                  |
 |==========+==========================|
