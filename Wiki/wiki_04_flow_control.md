@@ -1,6 +1,3 @@
-# Flow Control
-  
-  
 ## Intro
   
 Up until now, all the code we've written was executed in top-down order. Sometimes it's necessary to change the way a program flow, for example, making a program that can decide weather or not to run a piece of code.
