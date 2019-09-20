@@ -1,5 +1,6 @@
 #!/bin/python
 
+# Create a list with the items 1, 2
 alist = [1, 2]
 print("Our list:", alist)
 
@@ -26,5 +27,12 @@ alist.pop(1)
 print("Our List:", alist)
 
 # Return the index of the first item with value x in the list
-print("Our List:", alist.index(1))
+print("Index:", alist.index(1))
+
+# Count the number of times an item, x, appears in the list
+print("Number of occurrences", alist.count(1))
+
+# Reverses the items of the list, in place
+alist.reverse()
+print("Our list:", alist)
 
