@@ -33,11 +33,11 @@ print("Unique letters in y:", y)
 print("Letters in x but nor in y:", x - y)
 
 # Union (Or)
-print("Letters in x, y or both", x | y)
+print("Letters in x, y or both:", x | y)
 
 # Intersection (And)
-print("Letter in both x and y", x & y)
+print("Letter in both x and y:", x & y)
 
 # Symmetric difference (Xor)
-print("Letters in x or y but not in both", x ^ y)
+print("Letters in x or y but not in both:", x ^ y)
 
