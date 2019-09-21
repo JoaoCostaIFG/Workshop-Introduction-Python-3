@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 
-# The paratheses are not mandatory in most situations but we recommend their use either way
+# The paratheses are not mandatory in most declaratios but we recommend their use either way
 atuple = (1, 2, 'hey', 4.2, 0)
 
 # Print the whole tuple

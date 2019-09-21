@@ -1,9 +1,9 @@
 #!/usr/bin/env python3
 
-# Create an empty tuple
+# Declare an empty tuple
 emptytuple = ()
 
-# Create a tuple with only 1 element
+# Declare a tuple with only 1 element
 singletuple = (1, )  # Notice the trailing comma
 
 print("Our tuples:", emptytuple, singletuple)

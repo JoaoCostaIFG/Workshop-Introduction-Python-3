@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 
-# Create a list with the items 1, 2
+# Declare a list with the items 1, 2
 alist = [1, 2]
 print("Our list:", alist)
 
