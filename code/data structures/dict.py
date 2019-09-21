@@ -17,11 +17,7 @@ print("Our dict:", ages)
 print("Our list:", list(ages))
 
 # A dictionary is also an iterable (will be discussed in the iterable chapter)
-if "Carlos" in ages:
-    print(True)
-
-else:
-    print(False)
+print("Carlos" in ages)
 
 # The next commented line results in an order because we can't access non-existant keys
 # print(ages["123"])

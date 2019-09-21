@@ -8,18 +8,8 @@ print("Our set:", aset)
 # Check membership
 # This in keyword will be discussed in detail in the chapter about iterables
 # For now, we just need to know that it checks if "yum" is equal to at least 1 of the elements of aset
-if "yum" in aset:
-    print(True)
-
-else:
-    print(False)
-
-if "Iargo" in aset:
-    print(True)
-
-else:
-    print(False)
-
+print("yum" in aset)
+print("Iargo" in aset)
 
 # Crating sets from an iterable (string)
 x = set("comparable")
