@@ -155,27 +155,24 @@ print(a[::-1] # EEEI)
 
 ## String Slicing
 
-Indexing also allows the ***slicing*** of a string. When slicing, a new substring
-is always created. The starting and ending chars of that substring can be specified
-(at least one of them is required). A string can be sliced using the syntax ***str[start:end]***:
+Indexing also allows string slicing. Slicing returns a substring of the string that we are slicing.
+
+To specify the starting and ending indexes of the substring we use the following syntax: ***str[start:end]***.
 
 ```python
 my_str="A beautiful morning"
 my_substr=my_str[2:11]
 print(my_substr) # beautiful
-```
-
-Using only one integer will yield either all contents to, or from that position.
-
-```python
 print("A beautiful morning"[12:]) # morning
 print("A beautiful morning"[:12]) # A beautiful
 ```
 
++ If we ommit the starting index, the substring will be made from the beggining of the original string.
++ If we ommit the ending index, the substring will be made to the end of the original string.
 ???
 
-Notice how the first integer refers to the character 'b' (inclusive) and 11
-corresponds to the whitespace after 'l' (exclusive).
+Explain a inclusidade: 1o int é inclusivo, 2o é exclusivo.
+O que acham que my_str[:] vai dar retreive
 
 ---
 
@@ -191,27 +188,38 @@ a[0]="t" # ILLEGAL! - str object does not support assignment
 
 As a consequence, when trying to change the content of a
 string we are forced to create a new one.
-So as to make this process easier the str class has a
-selection of methods that take an input string and
-create a new object in memory (which is usually a modified version of that string).
 
-A method can be called using ***str.method(__args__)***.
-Many methods require additional arguments and sometimes they have to be of
-a specific type. Some arguments are also optional. These are
-surrounded by brackets.
+Therefore, all methods of the str class will always return a new string
+and will **never** modify an existing one.
 
-The command ***help(__method__)*** can be used to see the official
-documentation, which has information on how to use the method and what it does.
-The official documentation can also be accessed by this [***link***](https://docs.python.org/3/index.html).
+---
 
-The following list contains the most common string methods. All of their
-descriptions are either adapted or copied from the official python documentation.
+## Data Types - String Methods
 
-+ ***str.capitalize()*** - Makes first character upper case and the rest lower
+To call a string method we use the syntax: **string_variable**.***method***(*args*).
+
+Some methods may require a number of arguments (which may be mandatory, depending on the method).
+
+We won't cover all string methods due to time constraints, but keep in mind that the command
+***help(__method__)*** or the [***official documentation***](https://docs.python.org/3/index.html)
+both have extensive information on how to use all methods of the library.
+
+The following list contains the most common string methods.
+
++ ***str.capitalize()*** - Makes first character upper case and the rest lower.
 
     ```python
     "ferNANdo caRVALho".capitalize() # Fernando carvalho
     ```
+
+???
+
+Vamos dar so um cheirinho de todos os metodos.
+Explicar [:] de como era um arg optional.
+
+---
+
+## Data Types - String Methods
 
 + ***str.count(sub[, start[, end]])*** - Return the number of non-overlapping
   occurrences of substring sub in the range [start, end].
@@ -222,12 +230,20 @@ descriptions are either adapted or copied from the official python documentation
   "ananas".count("an", 2) # 1
   ```
 
-+ ***str.endswith(suffix)*** - Returns True if the string ends with the specified
-    suffix. False otherwise.
++ ***str.join(iter)*** - Concatenates str between every member of iter.
 
-   ```python
-   "test.pdf".endswith("pdf") # True
-   ```
+    ```python
+    ", ".join("123") # "1, 2, 3"
+    "_".join(["1", "2", "3"]) # 1_2_3
+    ```
+
+???
+
+The last example is a list, which we will discuss later.
+
+---
+
+## Data Types - String Methods
 
 + ***str.find(sub[, start[, end]])*** - Return the lowest index in the string where
     substring sub is found within the slice s[start:end]. Optional arguments start
@@ -244,37 +260,16 @@ descriptions are either adapted or copied from the official python documentation
     "Nemo" in "Dory_Nemo" # True
     ```
 
-+ ***str.isdigit()*** - Return true if all characters in the string are digits
-    and there is at least one character, false otherwise.
-
-    ```python
-    "1234".isdigit() # True
-    "123f".isdigit() # False
-    ```
-
-+ ***str.isupper*** - Returns true only if all characters of the string are
-    uppercased. False otherwise.
-
-    ```python
-    "QWERTY_".isupper() # True
-    "QWeRTY_".isupper() # False
-    ```
-
-+ ***str.join(iter)*** - Concatenates str between every member of iter.
-
-    ```python
-    ", ".join("123") # "1, 2, 3"
-    "_".join(["1", "2", "3"]) # 1_2_3
-    ```
-
-    Note: The last example is a list, which we will discuss later.
-
 + ***str.lower*** - Return a copy of the string with all the cased characters
     converted to lowercase.
 
     ```python
     "FeRNaNDo".lower() # "fernando"
     ```
+
+---
+
+## Data Types - String Methods
 
 + ***str.replace(old, new[, count])*** - Return a copy of the string with all
     occurrences of substring old replaced by new. If the optional argument
@@ -293,91 +288,50 @@ descriptions are either adapted or copied from the official python documentation
     "1,2,3".split(',', maxsplit=1) # ["1", "2,3"]
     ```
 
-+ ***str.strip([chars])*** - Returns a copy of a string with the leading and trailing
-    characters removed. The chars argument specifies which characters are
-    to be removed from the begining and end of the string. Characters are
-    removed from the leading end until reaching a string character that is
-    not contained in the set of characters in chars. If chars is omitted then
-    only whitespaces are removed.
+---
 
-    ```python
-    "   big and spacious     ".strip() # "big and spacious"
-    "www,archlinux.org".strip("gw.or") # "archlinux"
-    ```
+## Data Types - Format Method
 
-+ ***format*** - The format method is one of the most extensive formats in the
-    str class. It is designed to help string output formatting. It formats
-    strings that are identified with the {} (braces) placeholder. The
-    placeholders will then be replaced by the arguments given in format.
+***format*** - It formats strings that are identified with the {} (braces) placeholder.
+All placeholders will be replaced by the arguments given in the .format call.
 
-    ```python
-    name="Fernando"
-    print("My name is {}".format(name))
-    ```
+The type of formatting can be specified in the arguments of the method.
 
-    It is possible to specify the order in which the strings are substitute
-    by inserting an integer into the braces.
+```python
+name="Fernando"
+print("My name is {}".format(name)) # "My name is Fernando"
+```
 
-    ```python
-    print("1st:{3};2nd:{0};3rd:{1};4th:{2}".format("Second", "Third", "Forth", "First"))
-    # 1st:First;2nd:Second;3rd:Third;4th:Forth
-    ```
+It is possible to specify the order in which the strings are substitute
+by inserting an integer into the braces.
 
-    There is a whole portefolio of different options that can be used inside braces
-    to format strings. Due to time restrictions we will only mention a few. For more
-    information be sure to check [**the official documentation**](https://docs.python.org/3/library/string.html#formatstrings).
+```python
+print("1st:{3};2nd:{0};3rd:{1};4th:{2}".format("Second", "Third", "Forth", "First"))
+# 1st:First;2nd:Second;3rd:Third;4th:Forth
+```
 
-    These are the most commmon formatting modifiers:
-  + **align** - Specifies the alignment of the string. A width can be give to
-      define the minimum field width. If width isn't given, the field width will
-      be determined by the content:
+---
 
-    1. **<** - Left align.
-    2. **\>** - Right align.
-    3. **=** - Forces the padding to be placed after the sign (if any) but before.
-      the digits. Only valid for numeric types.
-    4. **^** - Centered
+## Data Types - Format Method
 
-    ```python
-    print("{:>30}".format("IEEE"))
-    #                IEEE
-    ```
+There is a whole portefolio of different options that can be used with format.
 
-  + **sign** - Specifies the sign of numerical data.
-    1. **+** \- Sign is used for both positive as negative numbers.
-    2. **--** \- Only negative numbers have a minus sign.
-    3. **space** - Space is used on positive numbers.
-    Minus sign on negative numbers.
+```python
+print("{:>30}".format("IEEE")) # Right with 30 width
+#                IEEE
 
-  + **#** - Specifies how numbers are displayed.
-    For integers:
-    1. **b** - Binary.
-    2. **c** - Unicode character.
-    3. **d** - Decimal integer.
-    4. **o** - Octal format.
-    5. **x** - Hex Format. Lower-case for a-f.
-    6. **X** - Hex Format. Upper cas for A-F.
+print("{:b}\n{:x}\n{:X}\n".format(8, 13, 13)) # Binary or Hexa notation
+# 1000
+# d
+# D
+print("{:.3e}\n{:.2g}\n{:%}".format(3.14, 1.26, 0.666)) # Exponent
+# 3.140e00
+# 1.3
+# 66.600000%
+```
 
-    ```python
-    print("{:b}\n{:x}\n{:X}\n".format(8, 13, 13))
-    # 1000
-    # d
-    # D
-    ```
+Make sure to check the wiki for a brief summary or the official docs for a more extensive explanation.
 
-    For floats:
-    1. **e** - Exponent notation.
-    2. **g** - General format. Can be specified to a specific precision. Default
-    precision is 6.
-    3. **%** - Percentage format. Multiplies the number by 100 followed by a
-    percent sign.
-    4. __.precision__ - Set number precision. Must be
-    inserted befor the format type (if specified).
-
-    ```python
-    print("{:.3e}\n{:.2g}\n{:%}".format(3.14, 1.26, 0.666))
-    # 3.140e00
-    # 1.3
-    # 66.600000%
-
-    ```
+???
+Time constrains, xau nao vamos falar mt
+Dizer o que o width representa quando usamos o format (linha onde o fim de todas as strings vai estar)
