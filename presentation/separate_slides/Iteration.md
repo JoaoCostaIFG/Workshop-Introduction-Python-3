@@ -121,6 +121,20 @@ for item in zipped_tuple:
 
 ---
 
+## Standard Itertools Module
+
+This [module](https://docs.python.org/3/library/itertools.html) brings a wide array of tools to work with iteration, we advise you to give it a read in your spare time.  
+Some noteworthy methods:
+
+- `itertools.takewhile(predicate, iterable)`:  
+Takes elements from an iterable (or generator) while `predicate` is true.  
+Argument `predicate` can be a simple comparison or a lambda function, for example.
+
+- `itertools.chain(*iterables)`  
+Takes various iterable objects and returns an iterator that ties all objects together (given two lists, it would return an iterator that once list1 is over, iteratres through list2).
+
+---
+
 ## Under the Hood
 
 This topic may be confusing for begginners of the language, but can provide an invaluable look into how Python magically handles iteration and for loops for you.

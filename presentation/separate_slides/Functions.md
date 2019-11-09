@@ -151,22 +151,32 @@ these places are called *scopes* (or *namespaces*):
 1. **Built-in scope** - Variables that are predefined in Python.
 
 Whenever Python looks for a variable, it will always look for it in the
-previous order.
+previous order. To use a global variable inside a function call, use the global keyword.
 
-After you invoke a function and its execution ends, all the local variables
-created by it are deleted by the garbage collector. For example:
+**Note:** After you invoke a function and its execution ends, all the local variables
+created by it are deleted by the garbage collector.
+
+---
+
+### Examples
 
 ```python
 x=5
+y=2
 def func():
     x=7
-    print(x)
+    print("x:", x) # prints 7
+    global y
+    print("y:", y) # prints 2
+    y = 4
+    print("y:", y) # prints 4
 
-func() # prints 7
-print(x) # prints 5
+func()
+print("x:", x) # prints 5
+print("y:", y) # prints 4
 ```
 
-Although we use global variables in this workshop, you should avoid using them
+Although we may use global variables in this workshop, you should avoid using them
 whenever possible, as they diminish readability and lead to increased memory
 usage.
 

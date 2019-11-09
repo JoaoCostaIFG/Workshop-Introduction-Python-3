@@ -66,49 +66,19 @@ The **For** loop makes heavy use of the **range** object.
 - The **step** parameter is optional and by default is 1.
 - We can also create **range** objects with only 1 parameter: `range(3)`. These are the same as: `range(0, 3)`.
 
-#### Example
-```python
-number = 123
+---
 
-for i in range(3):
-    print(3 - i, "guess(es) left")
-    guess = int(input("Your guess? "))
-
-    if number == guess:
-        print("You got it right!!")
-        # We use the break keyword to end a loop early
-        break
-
-    else:
-        print("Better luck next time.")
-        # We use the continue keyword to go straight to the next loop iteration
-        # (We just wanted to show it in this case)
-        continue
-
-if number != guess:
-    print("You didn't manage to guess the number.")
-```
+## For
 
 The **For** loop can be followed by an **Else** clause. The block of code inside the **Else** clause is executed once after the **For** loop is over, unless we reach a **break** keyword inside the **For** loop.
 
-#### Example
+Another structure of a **For** loop will be presented in [Iteration](#iteration).
+
+### Example
+
 ```python
-number = 123
-
 for i in range(3):
-    print(3 - i, "guess(es) left")
-    guess = int(input("Your guess? "))
-
-    if number == guess:
-        print("You got it right!!")
-        # We use the break keyword to end a loop early
-        break
-
-    else:
-        print("Better luck next time.")
-
-else:
-    print("You didn't manage to guess the number.")
+    print(i)
 ```
 
 ---
@@ -118,26 +88,10 @@ name: while
 
 **While** is the second and last available loop in **Python**. We use this loop when we want to repeat a code for an unknown amount of times (while a condition is **True**).
 
-#### Example
+### Example
 ```python
-number = 123
-choice = "yes"
-
-guess = int(input("Your guess? "))
-
-# Parantheses are optional
-# The tested condition works the same as in the If structure
-while (number != guess) and (choice == "yes"):
-    choice = input("You didn't get it right, would you like to try again? (yes/no) ")
-    guess = int(input("Your guess? "))
-
-if choice == "yes":
-    print("You got it right!!")
-
-else:
-    print("Better luck next time.")
+a, b = 0, 5
+while(a < b):
+    print(a)
+    a += 1
 ```
-
-#### Sections
-Previous: [Data Types](Data-Types)  
-Next: [Data Structures](Data-Structures)

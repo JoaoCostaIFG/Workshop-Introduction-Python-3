@@ -25,7 +25,7 @@ Then, we can define:
 
 ---
 
-## Data Types - Numbers
+## Numbers
 
 In general there are two types of representing numbers: ***integers*** and ***floats***.
 You can create these variables easily in the interpreter:
@@ -52,7 +52,7 @@ Mostrar q += e amigos existem
 
 ---
 
-## Data Types - Numbers
+## Numbers
 
 Some notes to take into account:
 
@@ -72,7 +72,7 @@ Some notes to take into account:
 
 ---
 
-## Data Types - Booleans
+## Booleans
 
 The ***boolean*** type is used to store values for ***True*** or ***False***.
 Some variables can be converted to boolean by using:
@@ -96,7 +96,7 @@ True          | False
 
 ---
 
-## Data Types - Strings
+## Strings
 
 The ***string*** data type stores text or a sequence of characters. We can define
 them by surrounding text by ', " or """.
@@ -141,7 +141,7 @@ You can use indexing to:
 
 + Access the nth character of a string using __**str[n]**__.
 + Retrieve the last character of a string by __**str[-1]**__.
-+ Access the nth last character with __**str[-n]**__..
++ Access the nth last character with __**str[-n]**__.
 + Inverse the string with __**str[::-1]**__.
 
 ```python
@@ -176,7 +176,7 @@ O que acham que my_str[:] vai dar retreive
 
 ---
 
-## Data Types - String Methods
+## String Methods
 
 One particularity of strings is that they are ***immutable***,
 and as such, cannot be changed. 
@@ -194,7 +194,7 @@ and will **never** modify an existing one.
 
 ---
 
-## Data Types - String Methods
+## String Methods
 
 To call a string method we use the syntax: **string_variable**.***method***(*args*).
 
@@ -219,7 +219,7 @@ Explicar [:] de como era um arg optional.
 
 ---
 
-## Data Types - String Methods
+## String Methods
 
 + ***str.count(sub[, start[, end]])*** - Return the number of non-overlapping
   occurrences of substring sub in the range [start, end].
@@ -243,7 +243,7 @@ The last example is a list, which we will discuss later.
 
 ---
 
-## Data Types - String Methods
+## String Methods
 
 + ***str.find(sub[, start[, end]])*** - Return the lowest index in the string where
     substring sub is found within the slice s[start:end]. Optional arguments start
@@ -260,7 +260,7 @@ The last example is a list, which we will discuss later.
     "Nemo" in "Dory_Nemo" # True
     ```
 
-+ ***str.lower*** - Return a copy of the string with all the cased characters
++ ***str.lower()*** - Return a copy of the string with all the cased characters
     converted to lowercase.
 
     ```python
@@ -269,7 +269,7 @@ The last example is a list, which we will discuss later.
 
 ---
 
-## Data Types - String Methods
+## String Methods
 
 + ***str.replace(old, new[, count])*** - Return a copy of the string with all
     occurrences of substring old replaced by new. If the optional argument
@@ -280,7 +280,7 @@ The last example is a list, which we will discuss later.
     "IEEE".replace("E", "_", 2) # I__E
     ```
 
-+ ***str.split*** - Return a **list** of the words in the string, using sep
++ ***str.split()*** - Return a **list** of the words in the string, using sep
     as the delimiter string. If maxsplit is given, at most maxsplit splits are done
 
     ```python
@@ -290,9 +290,9 @@ The last example is a list, which we will discuss later.
 
 ---
 
-## Data Types - Format Method
+## Format Method
 
-***format*** - It formats strings that are identified with the {} (braces) placeholder.
+The ***format*** formats strings that are identified with the {} (braces) placeholder.
 All placeholders will be replaced by the arguments given in the .format call.
 
 The type of formatting can be specified in the arguments of the method.
@@ -312,7 +312,7 @@ print("1st:{3};2nd:{0};3rd:{1};4th:{2}".format("Second", "Third", "Forth", "Firs
 
 ---
 
-## Data Types - Format Method
+## Format Method
 
 There is a whole portefolio of different options that can be used with format.
 
