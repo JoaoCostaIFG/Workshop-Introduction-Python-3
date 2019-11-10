@@ -19,7 +19,7 @@ output:
 	Odd
 ```
 
-# 3 - Octal com recursão  
+# 3 - Octal 
 Implement some Python code that converts a given number in base 10 to base 8 (octal) using at least 1 'for loop'.
 ```
 input:
