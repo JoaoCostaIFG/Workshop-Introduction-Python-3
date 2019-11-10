@@ -1,7 +1,7 @@
 # Workshop: Introduction to Python 3
 
 ## Wiki
-Link to our [wiki's Home page](/wiki/Home)
+Link to our [wiki's Home page](../wiki/Home)
 
 ## Contents
 1. [Interpreter](Interpreter)
