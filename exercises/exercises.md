@@ -21,6 +21,7 @@ output:
 
 # 3 - Octal 
 Implement some Python code that converts a given number in base 10 to base 8 (octal) using at least 1 'for loop'.
+You can use this method to confirm your results: `oct(number)`
 ```
 input:
 	9
