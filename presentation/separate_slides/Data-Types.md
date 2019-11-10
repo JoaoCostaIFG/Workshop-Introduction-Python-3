@@ -131,7 +131,10 @@ print("\"This is a quote\"")
 ## String Indexing
 
 By convention, the indexing of the characters in a string starts at 0.  
-INSERT STRING IMG HERE  
+
+<p align="center">
+    <img src="assets/slicing.png" alt="List Indexing (Bird, Steven, Edward Loper and Ewan Klein (2009), Natural Language Processing with Python. O’Reilly Media Inc.)" width="auto" height="200px"/>
+</p>
 
 ---
 
