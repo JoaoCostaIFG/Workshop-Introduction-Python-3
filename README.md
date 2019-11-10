@@ -18,6 +18,11 @@ Link to our [wiki's Home page](../../wiki/Home)
 1. [Comprehensions and Generators](../../wiki/Comprehensions-and-Generators)
 1. [Modules](../../wiki/Modules)
 
+## Exercises and Solutions
+
+1. [Exercises](../../wiki/Exercises)
+1. [Solutions](../../wiki/Solutions)
+
 ## Recommended IDEs
 - [Spyder/Anaconda](https://www.anaconda.com/distribution/): Installs python and various modules for you, recommended for an easier setup.
 - [VS Code](https://code.visualstudio.com/Download): Requires the manual installation of the [most recent version of Python 3](https://www.python.org/downloads/). Please refer to [Python in VS Code](https://code.visualstudio.com/docs/languages/python) for more detailed instructions. We recommend the Code Runner extension (present on the website listed above).
