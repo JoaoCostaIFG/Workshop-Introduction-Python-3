@@ -29,7 +29,7 @@ touch "${presentation}"
 
 # Add the content from all files to the final .md file
 echo "-> Added ${file}"
-cat "${files_rel_path}${first_file}" >> "${presentation}"
+cat "${files_rel_path}${first_file}" > "${presentation}"
 
 for file in ${files[*]}
 do
