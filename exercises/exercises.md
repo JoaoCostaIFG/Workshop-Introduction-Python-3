@@ -20,7 +20,7 @@ output:
 ```
 
 # 3 - Octal 
-Implement some Python code that converts a given number in base 10 to base 8 (octal) using at least 1 'for loop'.
+Implement some Python code that converts a given number in base 10 to base 8 (octal) using at least 1 'for loop'.   
 You can use this method to confirm your results: `oct(number)`
 ```
 input:
@@ -40,6 +40,10 @@ input:
 	Maria Manuel Saavedra
 output:
 	Maria M. Saavedra
+input:
+	José Augusto dos Santos Oliveira
+output:
+	José A. S. Oliveira
 ```
 
 # 5 - Case converter
@@ -53,7 +57,7 @@ output:
 ```
 
 # 6 - Sort and comparison functions  
-a) Instantiate a python list object. Read an integer, n, that represents the number of tuples you're gonna read next (each tuple is comprised of 1 string and 1 float). Each tuple you read, will have to be appended to the list you instantiated.  
+a) Instantiate a python list object. Read an integer, n, that represents the number of tuples you're gonna read next (each tuple is comprised of 1 string without whitespaces and 1 float). Each tuple you read, will have to be appended to the list you instantiated.  
 Print the last element of your list object (note: you may try out the index -1 in your list to get the last element).  
 ```
 input:
