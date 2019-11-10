@@ -5,18 +5,18 @@
 Our presentation was built using remark, and you can open it [here](https://tiagodusilva.github.io/Workshop-Introduction-Python-3/).
 
 ## Wiki
-Link to our [wiki's Home page](../../wiki/Home.md)
+Link to our [wiki's Home page](../../wiki/Home)
 
 ## Contents
-1. [Interpreter](../../Interpreter.md)
-1. [Variables](../../Variables.md)
-1. [Data Types](../../Data-Types.md)
-1. [Flow Control](../../Flow-Control.md)
-1. [Data Structures](../../Data-Structures.md)
-1. [Iteration](../../Iteration.md)
-1. [Functions](../../Functions.md)
-1. [Comprehensions and Generators](../../Comprehensions-and-Generators.md)
-1. [Modules](../../Modules.md)
+1. [Interpreter](../../wiki/Interpreter)
+1. [Variables](../../wiki/Variables)
+1. [Data Types](../../wiki/Data-Types)
+1. [Flow Control](../../wiki/Flow-Control)
+1. [Data Structures](../../wiki/Data-Structures)
+1. [Iteration](../../wiki/Iteration)
+1. [Functions](../../wiki/Functions)
+1. [Comprehensions and Generators](../../wiki/Comprehensions-and-Generators)
+1. [Modules](../../wiki/Modules)
 
 ## Recommended IDEs
 - [Spyder/Anaconda](https://www.anaconda.com/distribution/): Installs python and various modules for you, recommended for an easier setup.
