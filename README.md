@@ -1,18 +1,22 @@
 # Workshop: Introduction to Python 3
 
+## Presentation
+
+Our presentation was built using remark, and you can open it [here](https://tiagodusilva.github.io/Workshop-Introduction-Python-3/).
+
 ## Wiki
-Link to our [wiki's Home page](../wiki/Home)
+Link to our [wiki's Home page](../../wiki/Home)
 
 ## Contents
-1. [Interpreter](Interpreter)
-1. [Variables](Variables)
-1. [Data Types](Data-Types)
-1. [Flow Control](Flow-Control)
-1. [Data Structures](Data-Structures)
-1. [Iteration](Iteration)
-1. [Functions](Functions)
-1. [Comprehensions and Generators](Comprehensions-and-Generators)
-1. [Modules](Modules)
+1. [Interpreter](../../Interpreter)
+1. [Variables](../../Variables)
+1. [Data Types](../../Data-Types)
+1. [Flow Control](../../Flow-Control)
+1. [Data Structures](../../Data-Structures)
+1. [Iteration](../../Iteration)
+1. [Functions](../../Functions)
+1. [Comprehensions and Generators](../../Comprehensions-and-Generators)
+1. [Modules](../../Modules)
 
 ## Recommended IDEs
 - [Spyder/Anaconda](https://www.anaconda.com/distribution/): Installs python and various modules for you, recommended for an easier setup.
@@ -24,7 +28,3 @@ Link to our [wiki's Home page](../wiki/Home)
 - Python Standard Library (Latest 3.x version released)
   - [Website](https://docs.python.org/3/library/index.html)
   - [Download as a file](https://docs.python.org/3/download.html)
-
-## Presentation
-
-Our presentation was built using remark, and you can open it [here](https://tiagodusilva.github.io/Workshop-Introduction-Python-3/)
