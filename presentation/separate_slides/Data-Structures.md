@@ -25,7 +25,7 @@ A **List** is an **ordered**, **mutable** sequence of elements. Each element ins
 - You can cast iterable objects to the **List** type using: `alist = list(iterable)`
 
 <p align="center">
-   <img src="assets/slicing.png" alt="list indexing (Bird, Steven, Edward Loper and Ewan Klein (2009), Natural Language Processing with Python. O’Reilly Media Inc.)" width="auto" height="200px"/>
+   <img src="assets/slicing.png" alt="List Indexing (Bird, Steven, Edward Loper and Ewan Klein (2009), Natural Language Processing with Python. O’Reilly Media Inc.)" width="auto" height="200px"/>
 </p>
 
 ---

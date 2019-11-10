@@ -12,7 +12,7 @@ In Python all variables point to objects with 3 parts: id, value and type.
 As variables are light, reusing them doesn't really improve memory usage. We recommend you keep your variable types consistent to avoid confusing code.
 
 <p align="center">
-    <img src="assets/variables-objects.png" alt="Relationship between variables and objects" height="380px" width="auto">
+    <img src="assets/variables-objects.png" alt="Relationship between variables and objects" width="auto" height="250px">
 </p>
 
 ---

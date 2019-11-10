@@ -21,6 +21,11 @@ layout: true
 template: slide_title
 # Workshop Introduction to Python 3
 
+<div class="slide_logos">
+<img alt="nuieee-logo" src="assets/nuieee-logo.png">
+<img alt="cs-logo" src="assets/computer-society-logo.svg">
+</div>
+
 ---
 template: slide_contents
 # Contents
@@ -126,7 +131,7 @@ In Python all variables point to objects with 3 parts: id, value and type.
 As variables are light, reusing them doesn't really improve memory usage. We recommend you keep your variable types consistent to avoid confusing code.
 
 <p align="center">
-    <img src="assets/variables-objects.png" alt="Relationship between variables and objects" height="380px" width="auto">
+    <img src="assets/variables-objects.png" alt="Relationship between variables and objects" width="auto" height="250px">
 </p>
 
 ---
@@ -648,7 +653,7 @@ A **List** is an **ordered**, **mutable** sequence of elements. Each element ins
 - You can cast iterable objects to the **List** type using: `alist = list(iterable)`
 
 <p align="center">
-   <img src="assets/slicing.png" alt="list indexing (Bird, Steven, Edward Loper and Ewan Klein (2009), Natural Language Processing with Python. O’Reilly Media Inc.)" width="auto" height="200px"/>
+   <img src="assets/slicing.png" alt="List Indexing (Bird, Steven, Edward Loper and Ewan Klein (2009), Natural Language Processing with Python. O’Reilly Media Inc.)" width="auto" height="200px"/>
 </p>
 
 ---

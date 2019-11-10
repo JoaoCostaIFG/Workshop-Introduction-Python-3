@@ -1,6 +1,11 @@
 template: slide_title
 # Workshop Introduction to Python 3
 
+<div class="slide_logos">
+<img alt="nuieee-logo" src="assets/nuieee-logo.png">
+<img alt="cs-logo" src="assets/computer-society-logo.svg">
+</div>
+
 ---
 template: slide_contents
 # Contents
