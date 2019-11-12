@@ -112,3 +112,17 @@ print(list(list_squares))
 ```
 
 ***Note:*** Inline generators should always be inside parenthesis.
+
+---
+
+### Conditions in Generators
+
+You can also use if else statements inside generators, for example, if you wanted, for example, to process elements differently according to a condition.  
+This next snippet halves even numbers and squares odd numbers:
+
+```py
+alist = [2, 3, 7, 20]
+print(list( [n / 2 if n % 2 == 0 else n**2 for n in alist] ))
+
+# [6, 9, 49, 10]
+```

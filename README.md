@@ -33,3 +33,9 @@ Link to our [wiki's Home page](../../wiki/Home)
 - Python Standard Library (Latest 3.x version released)
   - [Website](https://docs.python.org/3/library/index.html)
   - [Download as a file](https://docs.python.org/3/download.html)
+
+## Authors
+
+- João Costa (@joaocostaifg)
+- João Lucas (@joaolucasmartins)
+- Tiago Silva (@tiagodusilva)
