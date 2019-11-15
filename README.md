@@ -7,7 +7,7 @@ Feel free to use these materials in your own presentations/projects, but please 
 
 ## Presentation
 
-Our presentation was built using remark, and you can open it [here](https://tiagodusilva.github.io/Workshop-Introduction-Python-3/).
+Our presentation was built using remark, and you can open it [here](https://joaocostaifg.github.io/Workshop-Introduction-Python-3/).
 
 ## Wiki
 Link to our [wiki's Home page](../../wiki/Home)
