@@ -1,5 +1,10 @@
 # Workshop: Introduction to Python 3
 
+## Preface
+This repository (including its wiki and github page) is mirror of the original (private) repository where the work/writting was done. I mirrored this repository, for archival and sharing purposes, the day after we taught this workshop.  
+The authors (me included) are listen at the end of this file.  
+Feel free to use these materials in your own presentations/projects, but please give us credit.  
+
 ## Presentation
 
 Our presentation was built using remark, and you can open it [here](https://tiagodusilva.github.io/Workshop-Introduction-Python-3/).
